@@ -11,6 +11,10 @@ In this work, we propose **Markov\_LLM**, a time-series forecasting framework wi
 - This framework introduces a key strategy, building a markov chain on the long context history input, and use the last state for a sufficient-state alignment  to preserve temporal information loss, caused by self-attention during forecasting with LLMs. 
 - This framework utilizes patching and VQ-VAE codebook, to do a patch-level tokenization for the LLM output, followed by an auto regression, sampling from learned token distribution. This strategy is designed to map the nature of LLM token generation: probabilistic distribution based autoregression, and capture uncertainty while preserving local temporal relations by patching, help to make a good prediction on both target points and distribution.
 
+<p align="center">
+<img src="./figures/framework.png" height = "360" alt="" align=center />
+</p>
+
 Our framework consists of five core components:
 1. **Causal Temporal Encoding**: Extracts rich temporal features while preserving causal ordering.
 2. **Temporal State Construction**: Builds compressed representations of temporal dependencies. We have two modes here: GRU mode and Markov mode.

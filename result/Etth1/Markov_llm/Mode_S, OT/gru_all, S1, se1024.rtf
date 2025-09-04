@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red24\green24\blue24;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c12157\c12157;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 2025-08-28 07:53:53.112593: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\
+2025-08-28 07:53:53.131330: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\
+E0000 00:00:1756367633.153434    1040 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\
+E0000 00:00:1756367633.159983    1040 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\
+W0000 00:00:1756367633.176718    1040 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\
+W0000 00:00:1756367633.176745    1040 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\
+W0000 00:00:1756367633.176748    1040 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\
+W0000 00:00:1756367633.176754    1040 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\
+2025-08-28 07:53:53.181696: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.\
+Epoch 01/50 | Batch 0050/117 | Elapsed 0:00:08 | ETA epoch 0:00:10 | ETA total 0:14:43\
+Epoch 01/50 | Batch 0100/117 | Elapsed 0:00:13 | ETA epoch 0:00:02 | ETA total 0:12:21\
+Epoch 01/50 | Batch 0117/117 | Elapsed 0:00:15 | ETA epoch 0:00:00 | ETA total 0:12:01\
+Epoch 01 | train_loss 3.293 | val_ce 1.014 | val_tie 0.021 | val_mae 0.352 | val_mse 0.196 | val_crps 0.3558\
+[checkpoint] Saved best mse=0.1960 at epoch 1 \uc0\u8594  /content/drive/MyDrive/ts_llm/best_markov_llm_markov_cur_all.pt\
+Epoch 02/50 | Batch 0050/117 | Elapsed 0:00:51 | ETA epoch 0:00:20 | ETA total 0:28:52\
+Epoch 02/50 | Batch 0100/117 | Elapsed 0:00:56 | ETA epoch 0:00:04 | ETA total 0:24:21\
+Epoch 02/50 | Batch 0117/117 | Elapsed 0:00:58 | ETA epoch 0:00:00 | ETA total 0:23:14\
+Epoch 02 | train_loss 1.994 | val_ce 1.166 | val_tie 0.019 | val_mae 0.363 | val_mse 0.196 | val_crps 0.3519\
+Epoch 03/50 | Batch 0050/117 | Elapsed 0:01:33 | ETA epoch 0:00:22 | ETA total 0:30:20\
+Epoch 03/50 | Batch 0100/117 | Elapsed 0:01:38 | ETA epoch 0:00:05 | ETA total 0:27:00\
+Epoch 03/50 | Batch 0117/117 | Elapsed 0:01:40 | ETA epoch 0:00:00 | ETA total 0:26:05\
+Epoch 03 | train_loss 1.434 | val_ce 1.389 | val_tie 0.016 | val_mae 0.307 | val_mse 0.153 | val_crps 0.3222\
+[checkpoint] Saved best mse=0.1531 at epoch 3 \uc0\u8594  /content/drive/MyDrive/ts_llm/best_markov_llm_markov_cur_all.pt\
+Epoch 04/50 | Batch 0050/117 | Elapsed 0:02:16 | ETA epoch 0:00:23 | ETA total 0:30:47\
+Epoch 04/50 | Batch 0100/117 | Elapsed 0:02:21 | ETA epoch 0:00:05 | ETA total 0:28:10\
+Epoch 04/50 | Batch 0117/117 | Elapsed 0:02:23 | ETA epoch 0:00:00 | ETA total 0:27:24\
+Epoch 04 | train_loss 1.337 | val_ce 1.571 | val_tie 0.017 | val_mae 0.347 | val_mse 0.192 | val_crps 0.3438\
+Epoch 05/50 | Batch 0050/117 | Elapsed 0:02:58 | ETA epoch 0:00:23 | ETA total 0:30:30\
+Epoch 05/50 | Batch 0100/117 | Elapsed 0:03:03 | ETA epoch 0:00:05 | ETA total 0:28:23\
+Epoch 05/50 | Batch 0117/117 | Elapsed 0:03:05 | ETA epoch 0:00:00 | ETA total 0:27:44\
+Epoch 05 | train_loss 1.341 | val_ce 1.792 | val_tie 0.016 | val_mae 0.346 | val_mse 0.201 | val_crps 0.3538\
+Epoch 06/50 | Batch 0050/117 | Elapsed 0:03:40 | ETA epoch 0:00:23 | ETA total 0:30:04\
+Epoch 06/50 | Batch 0100/117 | Elapsed 0:03:45 | ETA epoch 0:00:06 | ETA total 0:28:16\
+Epoch 06/50 | Batch 0117/117 | Elapsed 0:03:47 | ETA epoch 0:00:00 | ETA total 0:27:43\
+Epoch 06 | train_loss 1.301 | val_ce 1.844 | val_tie 0.017 | val_mae 0.385 | val_mse 0.244 | val_crps 0.3733\
+Epoch 07/50 | Batch 0050/117 | Elapsed 0:04:22 | ETA epoch 0:00:23 | ETA total 0:29:33\
+Epoch 07/50 | Batch 0100/117 | Elapsed 0:04:27 | ETA epoch 0:00:06 | ETA total 0:27:59\
+Epoch 07/50 | Batch 0117/117 | Elapsed 0:04:29 | ETA epoch 0:00:00 | ETA total 0:27:30\
+Epoch 07 | train_loss 1.289 | val_ce 1.901 | val_tie 0.015 | val_mae 0.353 | val_mse 0.207 | val_crps 0.3393\
+Epoch 08/50 | Batch 0050/117 | Elapsed 0:05:03 | ETA epoch 0:00:23 | ETA total 0:28:59\
+Epoch 08/50 | Batch 0100/117 | Elapsed 0:05:09 | ETA epoch 0:00:06 | ETA total 0:27:36\
+Epoch 08/50 | Batch 0117/117 | Elapsed 0:05:10 | ETA epoch 0:00:00 | ETA total 0:27:10\
+Epoch 08 | train_loss 1.307 | val_ce 2.052 | val_tie 0.015 | val_mae 0.363 | val_mse 0.209 | val_crps 0.3284\
+Epoch 09/50 | Batch 0050/117 | Elapsed 0:05:45 | ETA epoch 0:00:23 | ETA total 0:28:23\
+Epoch 09/50 | Batch 0100/117 | Elapsed 0:05:51 | ETA epoch 0:00:06 | ETA total 0:27:09\
+Epoch 09/50 | Batch 0117/117 | Elapsed 0:05:52 | ETA epoch 0:00:00 | ETA total 0:26:45\
+Epoch 09 | train_loss 1.337 | val_ce 2.070 | val_tie 0.014 | val_mae 0.336 | val_mse 0.183 | val_crps 0.3114\
+[early stop] No improvement in 5 epochs. Stopping at epoch 9.\
+[load best] Loaded checkpoint from epoch 3 for test.\
+TEST: \{'ce': 0.5243058895522897, 'tie': 0.05167767593891106, 'crps': 0.510974029248411, 'mae': 0.510974029248411, 'mse': 0.3384377647783946\}}
